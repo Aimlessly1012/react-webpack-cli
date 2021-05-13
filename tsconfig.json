@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 编译成 ES2015 (Babel 将做剩下的事情)
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src", // 设置根路径
+    "paths": {
+      // 公共文件引用路径
+      "utils/*": ["utils/*"],
+      "components/*": ["components/*"],
+      "pages/*": ["pages/*"],
+    },
+    "sourceMap": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext", // 使用 ES2015 模块
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": true, // 必须为变量设置类型
+    "strictNullChecks": true, // 会更容易识别出你引用的一个可能是 undefined 值的地方,（对象取值）
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "jsx": "react"
+  },
+  "include": ["./src"]
+}
